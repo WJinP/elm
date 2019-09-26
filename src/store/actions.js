@@ -1,0 +1,26 @@
+export default{
+    showHeader:({commit})=>{
+        commit('showHeader')
+    },
+    hideHeader:({commit})=>{
+        commit('hideHeader')
+    },
+    showLoading:({commit})=>{
+        commit('showLoading')
+    },
+    hideLoading:({commit})=>{
+        commit('hideLoading')
+    },
+    showFooter:({commit})=>{
+        commit('showFooter')
+    },
+    hideFooter:({commit})=>{
+        commit('hideFooter')
+    },
+    saveGeohash(context,geohash){
+        context.commit('saveGeohash',geohash)
+    },
+    recordAddres(context,{latitude,longitude}){
+        context.commit('recordAddres',{latitude,longitude})
+    }
+}
